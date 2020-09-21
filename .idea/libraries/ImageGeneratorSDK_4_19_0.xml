@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ImageGeneratorSDK-4.19.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ImageGeneratorSDK-4.19.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/UtilitiesSDK-4.19.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
