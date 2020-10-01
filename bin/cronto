@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -jar ./out/artifacts/cronto_jar/cronto.jar "$@"
