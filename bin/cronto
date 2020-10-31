@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env ruby
 
-java -jar ./out/artifacts/cronto_jar/cronto.jar "$@"
+jar = File.dirname(File.realpath(__FILE__)) + '/../out/artifacts/cronto_jar/cronto.jar'
+
+exec 'java', '-jar', jar, *ARGV
