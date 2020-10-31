@@ -5,7 +5,9 @@ module Cronto
 
   extend self
 
-  def self.jar
+  class Error < StandardError; end
+
+  def jar
     File.dirname(File.realpath(__FILE__)) + '/../out/artifacts/cronto_jar/cronto.jar'
   end
 
@@ -15,7 +17,7 @@ module Cronto
     if status.success?
       return out
     else
-      raise err
+      raise Cronto::Error, err
     end
   end
 
