@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
-jar = File.dirname(File.realpath(__FILE__)) + '/../out/artifacts/cronto_jar/cronto.jar'
+load File.dirname(File.realpath(__FILE__)) + '/../lib/cronto.rb'
 
-exec 'java', '-jar', jar, *ARGV
+begin
+  Cronto.run(*ARGV)
+rescue => e
+  puts "ERROR! #{e}"
+  exit 1
+end
