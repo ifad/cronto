@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    cronto (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 2.0)
+  cronto!
+  rake
+
+BUNDLED WITH
+   2.0.1
